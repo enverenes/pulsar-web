@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'], // Set Montserrat as the default sans font
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import { CgWebsite } from "react-icons/cg";
 import { CiMobile1 } from "react-icons/ci";
 import { FaCode } from "react-icons/fa";
+import styles from './styles.module.css';
 
 const LandingPage = () => {
   // Hero Section Animation
@@ -34,6 +35,7 @@ const LandingPage = () => {
           heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'
         }`}
       >
+        <div className="slidingLinesBg"></div>
         <h1 className="text-5xl md:text-7xl font-bold mb-4">WeInteractive</h1>
         <p className="text-xl md:text-2xl text-secondaryText mb-8">
           Your Partner in Digital Innovation

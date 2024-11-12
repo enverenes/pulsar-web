@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Regular";
+  src: local("Montserrat-VariableFont_wght"),
+  url("/Users/envereneskeskin/Documents/pulsar/pulsar-web/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+  ;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -19,3 +26,47 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* globals.css or styles.css */
+
+.slidingLinesBg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px,
+    transparent calc(25% - 1px)
+  );
+  background-size: calc(25% + 1px) calc(25% + 1px);
+  background-position: 0 0;
+  animation: slide 0.5s linear forwards, spread 0.5s ease-in-out forwards;
+  animation-delay: 0s, 0.5s; /* Delay 'spread' until 'slide' finishes */
+}
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100% -100%;
+  }
+}
+
+@keyframes spread {
+  from {
+    background-size: calc(25% + 1px) calc(25% + 1px);
+    background-position: -100% -100%; /* Maintain end position of 'slide' */
+  }
+  to {
+    background-size: calc(100% + 4px) calc(100% + 4px);
+    background-position: -100% -100%; /* Keep position constant */
+  }
+}
+
+
