@@ -21,7 +21,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-secondaryBg text-primaryText fixed w-full z-10 shadow-md">
+    <nav className="bg-primaryBg text-primaryText fixed w-full z-10 shadow-sm shadow-gray-500">
       <div className="container mx-auto flex flex-wrap items-center justify-between px-4 py-3">
         {/* Logo */}
         <div className="flex items-center flex-shrink-0 mr-6">
@@ -63,7 +63,7 @@ function Navbar() {
           }}
           className="w-full lg:flex lg:items-center lg:w-auto"
         >
-          <div className="text-sm lg:flex-grow lg:text-right">
+          <div className="text-sm lg:flex lg:flex-grow">
             <a
               href="#"
               className="block mt-4 lg:inline-block lg:mt-0 text-primaryText hover:text-accent mr-4 transition-colors duration-300"
@@ -82,6 +82,8 @@ function Navbar() {
             >
               About
             </a>
+          </div>
+          <div className="text-sm lg:flex lg:items-center lg:text-right">
             <a
               href="#contact"
               className="block mt-4 lg:inline-block lg:mt-0 text-primaryText hover:text-accent transition-colors duration-300"
