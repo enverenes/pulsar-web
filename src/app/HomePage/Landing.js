@@ -7,6 +7,7 @@ import Highlighter from "react-highlight-words";
 
 import Services from './Services';
 import Action from './Action';
+import Statistics from './Statistics';
 
 
 const LandingPage = () => {
@@ -56,8 +57,9 @@ const LandingPage = () => {
      
 
     <Services/>
-
+    <Statistics/>
     <Action/>
+    
 
       {/* Footer */}
       <footer className="py-6 bg-secondaryBg">
