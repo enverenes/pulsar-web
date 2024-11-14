@@ -27,7 +27,7 @@ const Action = () => {
          <p className="text-primaryText mb-8">
            Contact us today to turn your ideas into reality.
          </p>
-         <button className="bg-secondaryBg hover:bg-accentHover text-black font-semibold py-3 px-6 rounded-2xl transition-colors duration-300">
+         <button className="bg-button hover:bg-buttonHover text-black font-semibold py-3 px-6 rounded-2xl transition-colors duration-300">
            Contact Us
          </button>
        </div>
