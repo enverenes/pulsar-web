@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,19 +8,19 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // Set Montserrat as the default sans font
+        yourFont: ['Bricolage_Grotesque', 'sans-serif'],
       },
       colors: {
-        background: "#ffffff",       // Pure white background
-        foreground: "#000000",       // Pure black foreground
-        primaryBg: '#000000',        // Very dark gray background
-        secondaryBg: "#ffffff",      // Dark gray background for secondary elements
-        cardBg: '#4d4d4d',           // Medium gray for card backgrounds
-        primaryText: '#ffffff',      // Light gray for primary text
-        secondaryText: '#000000',    // Medium-light gray for secondary text
-        accent: '#7d7d7d',           // Medium gray accent color
-        accentHover: '#5c5c5c',      // Slightly darker gray for hover state
-        footerText: '#a1a1a1',       // Medium-light gray for footer text
+        background: "#ffffff",
+        foreground: "#000000",
+        primaryBg: '#000000',
+        secondaryBg: "#ffffff",
+        cardBg: '#4d4d4d',
+        primaryText: '#ffffff',
+        secondaryText: '#000000',
+        accent: '#7d7d7d',
+        accentHover: '#5c5c5c',
+        footerText: '#a1a1a1',
       },
     },
   },
