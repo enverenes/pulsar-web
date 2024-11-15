@@ -8,6 +8,7 @@ import Highlighter from "react-highlight-words";
 import Services from './Services';
 import Action from './Action';
 import Statistics from './Statistics';
+import PreviousWork from './PreviousWork';
 
 
 const LandingPage = () => {
@@ -57,6 +58,7 @@ const LandingPage = () => {
      
 
     <Services/>
+    <PreviousWork/>
     <Statistics/>
     <Action/>
     
