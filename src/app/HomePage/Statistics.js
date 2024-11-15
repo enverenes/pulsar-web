@@ -63,20 +63,20 @@ const Statistics = () => {
     <div
       ref={statsRef}
       id="statistics"
-      className={`py-20 bg-secondaryBg transition-all duration-1000 transform  ${
+      className={`py-20 mx-auto bg-secondaryBg transition-all duration-1000 transform  ${
         statsInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
     >
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12 text-center text-secondaryText">
+        <h2 className="md:text-6xl font-bold mb-12 text-center md:text-start text-secondaryText">
           Why a Website Matters
         </h2>
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-start mx-auto">
           {/* Animated Statistic */}
-          <div className="rounded-lg md:p-10">
-            <div className="flex flex-col md:flex-row items-center justify-center space-x-6">
+          <div className="rounded-lg ">
+            <div className="flex flex-col md:flex-row items-center justify-center space-x-16">
               {/* Chart Container */}
-              <div className="w-32 h-32 md:w-48 md:h-48 flex-shrink-0">
+              <div className="w-32 h-32 md:w-44 md:h-44 flex-shrink-0">
                 <div className="w-full h-full transition-transform duration-1000">
                   <ResponsiveContainer width="100%" height="100%">
                     <PieChart>
